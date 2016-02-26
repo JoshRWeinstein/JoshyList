@@ -1,4 +1,4 @@
-[Josh's List](http://list.joshrweinstein.com)
+Welcome to [Josh's List](http://list.joshrweinstein.com)
 ---
 Telescope is an open-source, real-time social news site built with [Meteor](http://meteor.com)
 
