@@ -1,3 +1,5 @@
+[Josh's List](http://list.joshrweinstein.com)
+---
 Telescope is an open-source, real-time social news site built with [Meteor](http://meteor.com)
 
 **Note:** Telescope is beta software. Most of it should work but it's still a little unpolished and you'll probably find some bugs. Use at your own risk :)
