@@ -1,3 +1,16 @@
 <template name="post_body">
   <div class="post-body markdown" aria-live="polite">{{{htmlBody}}}</div>
 </template>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=190475747689281";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div id="joshslistfb" class="fb-comments" data-href="http://list.joshrweinstein.com/" data-width="100%" data-numposts="5"></div>
+
+jwhello
