@@ -1,2 +1,11 @@
 <template name="after_post_item">
 </template>
+<script>
+var mydiv = document.getElementById("mydiv");  
+mydiv.innerHTML = "<fb:comments href='" + document.location.href + "' num_posts='10' width='739'></fb:comments>";  
+FB.XFBML.parse(mydiv); 
+</script>
+<div id="test1"><div id="fb-root"></div>
+        <script src="http://connect.facebook.net/en_US/all.js#xfbml=1">
+        </script>
+        <fb:comments href="http://list.joshrweinstein.com/" num_posts="10" width="739"></fb:comments></div>
