@@ -1,8 +1,28 @@
 <template name="comment_list">
-  <ul class="comments comment-list {{commentListClass}}" aria-live="polite">
+
+
+<ul class="comments comment-list {{commentListClass}}" aria-live="polite">
     {{#each childComments}}
       {{> comment_item}}
     {{/each}}
   </ul>
   {{> modules zone="commentThreadBottom" moduleData=this}}
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=190475747689281";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<ul>
+ <li class="comment module comment-displayed">
+ 	<div class="comment-body">
+ 		<div class="comment-content">
+	<h2 style="color: #00b7ff">Tag friends on Facebook who would be interested/relevant!</h2> <div id="joshslistfb" class="fb-comments" data-width="100%" data-numposts="5"></div>
+</div>
+</div>
+</li>
+</ul>
 </template>
