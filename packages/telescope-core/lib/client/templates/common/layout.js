@@ -87,6 +87,7 @@ Template.layout.onRendered( function () {
     $('body').scrollTop(currentScroll);
     Session.set('currentScroll', null);
   }
+  $("#joshslistfb").attr("data-href", window.location.href);
 
   // favicon
   var link = document.createElement('link');
