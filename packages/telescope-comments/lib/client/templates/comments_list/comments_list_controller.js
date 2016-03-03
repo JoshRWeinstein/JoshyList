@@ -15,7 +15,6 @@ Template.commentsListController.onCreated(function () {
   // initialize the reactive variables
   instance.terms = new ReactiveVar(instance.data.terms);
   instance.commentsLimit = new ReactiveVar(Settings.get('commentsPerPage', 5));
-  $("#joshslistfb").attr("data-href", window.location.href);
 
   // 2. Autorun
 

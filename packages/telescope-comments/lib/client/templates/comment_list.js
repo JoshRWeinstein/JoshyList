@@ -15,3 +15,7 @@ Template.comment_list.rendered = function(){
   // once all comments have been rendered, activate comment queuing for future real-time comments
   window.queueComments = true;
 };
+
+Template.comment_list.onRendered(function(){
+  $("#joshslistfb").attr("data-href", window.location.href);
+});

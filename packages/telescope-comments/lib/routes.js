@@ -3,6 +3,7 @@ FlowRouter.route('/comments/:_id', {
   action: function(params, queryParams) {
     BlazeLayout.render("layout", {main: "comment_controller", commentTemplate: "comment_reply"});
   }
+  
 });
 
 FlowRouter.route('/comments/:_id/edit', {
