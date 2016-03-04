@@ -15,7 +15,7 @@ FlowRouter.route('/posts/:_id/edit', {
 FlowRouter.route('/posts/:_id/:slug?', {
   name: "postPage",
   action: function(params, queryParams) {
-    trackRouteEntry(params._id);
+   // trackRouteEntry(params._id);
     BlazeLayout.render("layout", {main: "post_page"});
   }
 });
