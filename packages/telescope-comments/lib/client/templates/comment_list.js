@@ -18,7 +18,7 @@ Template.comment_list.rendered = function(){
 
 Template.comment_list.onRendered(function(){
   $("#joshslistfb").attr("data-href", window.location.href);
-  if (window.location.href.indexOf('?')){
+  if (window.location.href.indexOf('?') != -1){
     $("#joshslistfb").attr("data-href", window.location.href.substr(0, window.location.href.indexOf('?')));
   };
 });
