@@ -73,6 +73,7 @@ Package.onUse(function(api) {
 
   api.addAssets([
     'public/img/loading.svg',
+    'public/img/joshslist.jpg',
   ], 'client');
 
   api.addFiles([
