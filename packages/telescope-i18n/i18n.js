@@ -60,6 +60,15 @@ Meteor.startup(function () {
 
   if (Meteor.isClient) {
     i18n.setLanguage(Settings.get('language', 'en'));
+     return SEO.config({
+            title: 'Josh\'s List',
+            meta: {
+                'description': 'Connecting people!'
+            },
+            og: {
+                'image': 'http://56.media.tumblr.com/e47a5eee47c49c7c5cc1862ccd10435e/tumblr_inline_o3qo72aLOz1qcpmsc_500.jpg' 
+           }
+        });
   }
 
 });
